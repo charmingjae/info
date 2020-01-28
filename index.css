@@ -12,7 +12,8 @@ html, body {
       font-family: Courier New;
       /* font-family: 'Anonymous Pro', monospace; */
       color: #fff;
-      font-size: 90px;
+      /* font-size: 90px; */
+      font-size: 563%;
       letter-spacing: 12px;
       font-weight: 550;
       position: absolute;
@@ -33,7 +34,8 @@ html, body {
 .text{
   color: #fff;
   text-transform: uppercase;
-  font-size: 25px;
+  /* font-size: 25px; */
+  font-size: 156%;
   text-align: center;
   letter-spacing: 14px;
 }
