@@ -72,7 +72,7 @@ span {
   text-transform: uppercase;
   font-size: 96px;
   text-align: center;
-  letter-spacing: 14px;
+  letter-spacing: 10px;
 }
 
 .text::before,.text::after,.text1::before,.text1::after{
