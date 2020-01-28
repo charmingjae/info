@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Orientation( )</title>
+      <link rel="stylesheet" href="orientation.css">
+
+      <!-- use cdn for the library / link the library file -->
+      <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+
+      <!-- include html -->
+
+      <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+
+<body>
+    <div id="header"></div>
+</body>
+<body>
+
+
+    <!-- For Theme -->
+      <div class="container">
+            <div class="data" onclick="location.href='menu.html'">ORIENTATION</div>
+
+      </div>
+      <script type="text/javascript">
+
+      const text = baffle(".data");
+      text.set({
+            characters : '█▓█ ▒░/▒░ █░▒▓/ █▒▒ ▓▒▓/█ ░█▒/ ▒▓░ █<░▒ ▓/░>',
+            speed: 100
+      });
+      text.start();
+      text.reveal(4000);
+
+      </script>
+    <!-- Until Here For Theme -->
+    <div class="text middle" data-text="2020. 02. 19. 12PM">
+      2020. 02. 19. 12PM
+    </div>
+
+    <div class="text1 middle1" data-text="인천삼산월드체육관">
+      <a href="http://kko.to/2gsQyAejj"><span> 인천삼산월드체육관</span></a><br/><br/>
+
+    </div>
+
+    <span id="demo"></span>
+
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Feb 19, 2020 13:00:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="demo"
+        document.getElementById("demo").innerHTML = days + "d &nbsp" + hours + "h &nbsp"
+        + minutes + "m &nbsp" + seconds + "s &nbsp";
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+        }, 1000);
+    </script>
+
+
+
+</body>
+</html>
